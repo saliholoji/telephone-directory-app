@@ -2,6 +2,13 @@
 
 Welcome to the Delphi Phone Directory Application! This application allows you to manage your phone contacts efficiently. Below is a comprehensive guide to the features and functionality of the app.
 
+![1](https://github.com/user-attachments/assets/35a9892a-43b8-4a12-a662-1a7f4b601922)
+
+![2](https://github.com/user-attachments/assets/78df6847-c76e-4a25-bdba-48cd67a6a392)
+
+![3](https://github.com/user-attachments/assets/67a03833-b147-4469-bee2-766ae3c84ed1)
+
+
 ## 🚀 Features
 
 - **User Authentication**: Secure login with username and password.
