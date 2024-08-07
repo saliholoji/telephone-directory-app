@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.521,=C:\Users\xesma\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.390,C:\Users\xesma\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\xesma\Desktop\Ajanda\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.106,=C:\Users\SalihU\Desktop\Ajanda\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.066,C:\Users\xesma\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\xesma\Desktop\Ajanda\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.390,C:\Users\xesma\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\xesma\Desktop\Ajanda\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,=C:\Users\SalihU\Desktop\Ajanda\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

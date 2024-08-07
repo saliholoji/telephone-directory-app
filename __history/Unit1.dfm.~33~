@@ -1,0 +1,276 @@
+﻿object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'Efektif  - Kontrol Sende!'
+  ClientHeight = 513
+  ClientWidth = 642
+  Color = clHighlightText
+  Font.Charset = TURKISH_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  TextHeight = 16
+  object Label1: TLabel
+    Left = 440
+    Top = 163
+    Width = 68
+    Height = 16
+    Caption = 'Ad - Soyad:'
+    Color = clCream
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 439
+    Top = 220
+    Width = 106
+    Height = 16
+    Caption = 'Telefon Numaras'#305':'
+    Color = clCream
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 439
+    Top = 278
+    Width = 56
+    Height = 16
+    Caption = 'E - Posta:'
+    Color = clCream
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 439
+    Top = 335
+    Width = 24
+    Height = 16
+    Caption = 'Not:'
+    Color = clCream
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Top = 111
+    Width = 91
+    Height = 16
+    Caption = #304'sime G'#246're Ara:'
+    Color = clCream
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 23
+    Top = 40
+    Width = 592
+    Height = 44
+    Caption = '- Efektif - Kontrol Sende! -'
+    Color = clCream
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -37
+    Font.Name = 'Perpetua Titling MT'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 8
+    Width = 4
+    Height = 16
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 574
+    Top = 8
+    Width = 4
+    Height = 16
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit5: TEdit
+    Left = 16
+    Top = 133
+    Width = 380
+    Height = 24
+    TabOrder = 0
+    OnChange = Edit5Change
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Top = 163
+    Width = 380
+    Height = 288
+    DataSource = DataSource1
+    Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentShowHint = False
+    ReadOnly = True
+    ShowHint = False
+    TabOrder = 1
+    TitleFont.Charset = TURKISH_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Ad-Soyad'
+        Visible = True
+      end>
+  end
+  object txtİsim: TDBEdit
+    Left = 440
+    Top = 185
+    Width = 177
+    Height = 24
+    DataField = 'Ad-Soyad'
+    DataSource = DataSource1
+    TabOrder = 2
+  end
+  object txtTelefon: TDBEdit
+    Left = 439
+    Top = 242
+    Width = 177
+    Height = 24
+    DataField = 'Telefon Numaras'#305
+    DataSource = DataSource1
+    TabOrder = 3
+  end
+  object txtEposta: TDBEdit
+    Left = 439
+    Top = 300
+    Width = 177
+    Height = 24
+    DataField = 'E-Posta Adresi'
+    DataSource = DataSource1
+    TabOrder = 4
+  end
+  object txtNot: TDBEdit
+    Left = 439
+    Top = 357
+    Width = 177
+    Height = 94
+    AutoSize = False
+    DataField = 'Not'
+    DataSource = DataSource1
+    TabOrder = 5
+  end
+  object DBCheckBox1: TDBCheckBox
+    Left = 439
+    Top = 133
+    Width = 178
+    Height = 18
+    Caption = 'Favorile'
+    Color = clCream
+    DataField = 'Favori'
+    DataSource = DataSource1
+    ParentColor = False
+    TabOrder = 6
+  end
+  object btnYeniKayit: TButton
+    Left = 23
+    Top = 457
+    Width = 144
+    Height = 33
+    Caption = 'Yeni'
+    TabOrder = 7
+    OnClick = btnYeniKayitClick
+  end
+  object btnKaydet: TButton
+    Left = 173
+    Top = 457
+    Width = 144
+    Height = 33
+    Caption = 'Kaydet'
+    Enabled = False
+    TabOrder = 8
+    OnClick = btnKaydetClick
+  end
+  object btnSil: TButton
+    Left = 473
+    Top = 457
+    Width = 144
+    Height = 33
+    Caption = 'Sil'
+    TabOrder = 9
+    OnClick = btnSilClick
+  end
+  object btnDuzenle: TButton
+    Left = 323
+    Top = 457
+    Width = 144
+    Height = 33
+    Caption = 'D'#252'zenle'
+    TabOrder = 10
+    OnClick = btnDuzenleClick
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\xesma\Desk' +
+      'top\Ajanda\Win32\Debug\ajanda.mdb;Persist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 256
+    Top = 272
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'Ajanda'
+    Left = 320
+    Top = 272
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 192
+    Top = 272
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 144
+    Top = 272
+  end
+end
